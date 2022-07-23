@@ -1,8 +1,8 @@
-﻿using Interfaces;
+﻿using Units.Interfaces;
 using UnityEngine;
 
 namespace Units {
-	public sealed class UnitBehaviour : MonoBehaviour, IUnitBaseFunction {
+	public sealed class UnitBehaviour : MonoBehaviour, IUnit {
 
 		public void GetUnitData() {
 		}

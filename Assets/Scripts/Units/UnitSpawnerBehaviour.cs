@@ -1,7 +1,6 @@
 ﻿using Databases;
 using Enums;
 using UI.InventoryPanel.Behaviours;
-using UI.UnitButtonsPanel.Behaviours;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using Zenject;

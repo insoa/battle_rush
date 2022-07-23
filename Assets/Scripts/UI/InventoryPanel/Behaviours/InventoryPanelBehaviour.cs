@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using Databases;
 using Enums;
 using Interfaces;
-using UI.Interfaces;
 using UI.InventoryPanel.Interfaces;
 using UnityEngine;
 using UnityEngine.UI;

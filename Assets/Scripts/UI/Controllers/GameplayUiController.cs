@@ -1,8 +1,6 @@
 ﻿using System;
 using UI.InventoryPanel.Behaviours;
 using UI.ShopPanel.Behaviours;
-using UI.UnitButtonsPanel.Behaviours;
-using UI.UnitButtonsPanel.Enums;
 using Zenject;
 
 namespace UI.Controllers {

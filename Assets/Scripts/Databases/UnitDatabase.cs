@@ -1,52 +1,63 @@
 ﻿using System;
 using System.Collections.Generic;
+using Databases.Id;
 using Enums;
 using Interfaces;
 using UnityEngine;
-using Zenject;
 
 namespace Databases {
-	
 	[CreateAssetMenu(fileName = "UnitsDatabase", menuName = "ScriptableObjects/UnitsDatabase", order = 1)]
-	public sealed class UnitDatabase : ScriptableObjectInstaller, IUnitDatabase {
-	
-		public List<Unit> Units = new List<Unit>();
+	public sealed class UnitDatabase : ScriptableObject, IUnitDatabase {
+		[SerializeField] private Unit[] _units;
+		private readonly Dictionary<UnitId, Unit> _database = new();
 
-		public override void InstallBindings() {
-			Container.BindInterfacesAndSelfTo<UnitDatabase>().AsSingle().NonLazy();
+		public IEnumerable<Unit> All => _units;
+
+		public UnitDatabase(UnitData data) {
+			foreach (var unit in data.List)
+				_database.Add(unit.Id, unit);
+			_units = data.List;
 		}
 
-		public Unit GetUnitFromData(int id) {
-			return Units[id];
+		public Unit Get(UnitId unitId) {
+			if (!_database.ContainsKey(unitId))
+				Debug.Log("[ItemsDatabase]" + $"Can't find item with id {unitId}");
+			return _database[unitId];
 		}
+
+		public bool Has(UnitId unitId) => _database.ContainsKey(unitId);
+	}
+
+	[Serializable]
+	public class UnitData : ADataList<Unit> {
+		public UnitData(Unit[] list) : base(list) { }
 	}
 
 	[Serializable]
 	public sealed class UnitRare {
-		public EUnitRare Rare;
+		public EUnitGrade _grade;
 		public float Damage;
 		public float Health;
-		public float Armor;
 		public float MoveSpeed;
 	}
 
 	[Serializable]
 	public sealed class Unit {
+		public UnitId Id;
 		public string Name;
-		public int Id;
-		public int Level;
 		public EUnitType Type;
 		public EUnitClass Class;
 		public GameObject Prefab;
 		public Sprite UnitIcon;
 		public Sprite ClassIcon;
-		
-		public EUnitRare Rare;
+		public int Level;
+		public int Quantity;
+
+		public EUnitGrade _grade;
 		public float Damage;
 		public float Health;
-		public float Armor;
 		public float MoveSpeed;
 
-		public List<UnitRare> UnitRares = new List<UnitRare>();
+		public List<UnitRare> UnitRares = new();
 	}
 }

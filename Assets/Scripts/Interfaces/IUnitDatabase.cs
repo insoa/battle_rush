@@ -1,7 +1,9 @@
 ﻿using Databases;
+using Databases.Id;
 
 namespace Interfaces {
 	public interface IUnitDatabase { 
-		Unit GetUnitFromData(int id);
+		Unit Get(UnitId unitId);
+		bool Has(UnitId unitId);
 	}
 }

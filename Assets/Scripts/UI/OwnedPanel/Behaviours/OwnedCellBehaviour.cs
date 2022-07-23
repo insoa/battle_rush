@@ -18,65 +18,61 @@ namespace UI.OwnedPanel.Behaviours {
 		[SerializeField] private TextMeshProUGUI _characterLevel;
 		[SerializeField] private TextMeshProUGUI _characterClass;
 
-		private void Start() {
-			Debug.Log(_colorsDatabase);
-		}
-
-		public void SetRare(EUnitRare type) {
+		public void SetRare(EUnitGrade type) {
 			
-			var colorList = _colorsDatabase.RareColors;
+			var colorList = _colorsDatabase.RareColors; //изменить
 			switch (type) {
-				case EUnitRare.Common:
+				case EUnitGrade.Common:
 					foreach (var element in colorList) {
-						if (type != element.Rare)
+						if (type != element._grade)
 							continue;
 						_rareBackground.color = element.Color;
 						_rareFrameLight.color = element.Color;
 					}
 					break;
-				case EUnitRare.Uncommon:
+				case EUnitGrade.Uncommon:
 					foreach (var element in colorList) {
-						if (type != element.Rare)
+						if (type != element._grade)
 							continue;
 						_rareBackground.color = element.Color;
 						_rareFrameLight.color = element.Color;
 					}
 					break;
-				case EUnitRare.Rare:
+				case EUnitGrade.Rare:
 					foreach (var element in colorList) {
-						if (type != element.Rare)
+						if (type != element._grade)
 							continue;
 						_rareBackground.color = element.Color;
 						_rareFrameLight.color = element.Color;
 					}
 					break;
-				case EUnitRare.Mythical:
+				case EUnitGrade.Mythical:
 					foreach (var element in colorList) {
-						if (type != element.Rare)
+						if (type != element._grade)
 							continue;
 						_rareBackground.color = element.Color;
 						_rareFrameLight.color = element.Color;
 					}
 					break;
-				case EUnitRare.Legendary:
+				case EUnitGrade.Legendary:
 					foreach (var element in colorList) {
-						if (type != element.Rare)
+						if (type != element._grade)
 							continue;
 						_rareBackground.color = element.Color;
 						_rareFrameLight.color = element.Color;
 					}
 					break;
-				case EUnitRare.Ancient:
+				case EUnitGrade.Ancient:
 					foreach (var element in colorList) {
-						if (type != element.Rare)
+						if (type != element._grade)
 							continue;
 						_rareBackground.color = element.Color;
 						_rareFrameLight.color = element.Color;
 					}
 					break;
-				case EUnitRare.Immortal:
+				case EUnitGrade.Immortal:
 					foreach (var element in colorList) {
-						if (type != element.Rare)
+						if (type != element._grade)
 							continue;
 						_rareBackground.color = element.Color;
 						_rareFrameLight.color = element.Color;
@@ -87,9 +83,7 @@ namespace UI.OwnedPanel.Behaviours {
 			}
 		}
 
-		public void SetCharacterIcon(Sprite icon) {
-			_characterImage.sprite = icon;
-		}
+		public void SetCharacterIcon(Sprite icon) => _characterImage.sprite = icon;
 
 		public void SetCharacterName(string name) => _characterName.text = name;
 		

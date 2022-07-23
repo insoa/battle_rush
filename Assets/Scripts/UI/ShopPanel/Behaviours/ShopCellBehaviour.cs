@@ -1,8 +1,10 @@
-﻿using Databases;
+﻿using System;
+using Databases;
 using Enums;
 using Other;
 using UnityEngine;
 using UnityEngine.UI;
+using Zenject;
 
 namespace UI.ShopPanel.Behaviours {
 	public sealed class ShopCellBehaviour : MonoBehaviour {

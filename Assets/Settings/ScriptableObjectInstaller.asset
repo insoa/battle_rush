@@ -12,6 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 04193b99cd21406e92c30dfbab7bc781, type: 3}
   m_Name: ScriptableObjectInstaller
   m_EditorClassIdentifier: 
+  _playerDatabase: {fileID: 11400000, guid: f7157dd9be5138744a32fb5608bf4fdc, type: 2}
+  _resourcesDatabase: {fileID: 11400000, guid: 2adcb05989a6d45479ebe61faef9890a, type: 2}
+  _colorsDatabase: {fileID: 11400000, guid: 204e4bf437591724c8e7954ab2f912f3, type: 2}
   _unitDatabase: {fileID: 11400000, guid: e2fd2d8bae96d8a4994854e4d98ef30f, type: 2}
   _ownedUnitsDatabase: {fileID: 11400000, guid: cfb95ab1d999b954eb01834208685b67, type: 2}
-  _colorsDatabase: {fileID: 11400000, guid: 204e4bf437591724c8e7954ab2f912f3, type: 2}

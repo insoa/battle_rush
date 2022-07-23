@@ -122,6 +122,7 @@ QualitySettings:
     excludedTargetPlatforms:
     - Standalone
     - Server
+    - Android
   - serializedVersion: 2
     name: High
     pixelLightCount: 2
@@ -160,7 +161,6 @@ QualitySettings:
     excludedTargetPlatforms:
     - Standalone
     - Server
-    - Android
   - serializedVersion: 2
     name: Very High
     pixelLightCount: 3
