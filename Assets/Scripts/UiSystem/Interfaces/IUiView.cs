@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace UiSystem.Intefaces {
+namespace UiSystem.Interfaces {
 	public interface IUiView {
 		void Show();
 		void Hide();

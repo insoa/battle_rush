@@ -1,8 +1,6 @@
 ﻿using System.Collections.Generic;
 using Enums;
-using Interfaces;
 using UnityEngine;
-using Zenject;
 
 namespace Databases {
 	[CreateAssetMenu(fileName = "PlayerDatabase", menuName = "ScriptableObjects/PlayerDatabase", order = 5)]

@@ -1,5 +1,5 @@
 ﻿using System.Collections.Generic;
-using UiSystem.Intefaces;
+using UiSystem.Interfaces;
 using Zenject;
 
 namespace UiSystem {
@@ -50,6 +50,7 @@ namespace UiSystem {
 		}
 
 		public void ShowView() => OnShow();
+		
 		public void HideView() => OnHide();
 
 		protected virtual void OnShow() => View.Show();

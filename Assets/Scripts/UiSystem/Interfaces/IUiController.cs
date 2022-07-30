@@ -1,4 +1,4 @@
-﻿namespace UiSystem.Intefaces {
+﻿namespace UiSystem.Interfaces {
 	public interface IUiController {
 		bool IsActive { get; }
 		bool InFocus { get; }

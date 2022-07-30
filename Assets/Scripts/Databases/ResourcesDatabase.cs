@@ -6,6 +6,7 @@ using UnityEngine;
 namespace Databases {
 	[CreateAssetMenu(fileName = "ResourcesDatabase", menuName = "ScriptableObjects/ResourcesDatabase", order = 3)]
 	public sealed class ResourcesDatabase : ScriptableObject, IResourceDatabase {
+	
 		[SerializeField] private ResourceItem[] _resources;
 		private readonly Dictionary<ResourceId, ResourceItem> _database = new();
 		public IEnumerable<ResourceItem> All => _resources;

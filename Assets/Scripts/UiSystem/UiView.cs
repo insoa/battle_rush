@@ -1,4 +1,4 @@
-﻿using UiSystem.Intefaces;
+﻿using UiSystem.Interfaces;
 using UnityEngine;
 
 namespace UiSystem {
