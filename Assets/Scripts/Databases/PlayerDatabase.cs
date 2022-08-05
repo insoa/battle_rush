@@ -16,9 +16,9 @@ namespace Databases {
 		public void AddUnit(Unit unit, EUnitGrade grade) {
 			Units.Add(unit);
 			foreach (var rareType in unit.UnitRares) {
-				if (grade != rareType._grade)
+				if (grade != rareType.Grade)
 					continue;
-				unit._grade = grade;
+				unit.Grade = grade;
 				unit.Damage = rareType.Damage;
 				unit.Health = rareType.Health;
 				unit.MoveSpeed = rareType.MoveSpeed;

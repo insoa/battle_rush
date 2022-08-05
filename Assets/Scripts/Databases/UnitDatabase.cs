@@ -8,6 +8,7 @@ using UnityEngine;
 namespace Databases {
 	[CreateAssetMenu(fileName = "UnitsDatabase", menuName = "ScriptableObjects/UnitsDatabase", order = 1)]
 	public sealed class UnitDatabase : ScriptableObject, IUnitDatabase {
+		
 		[SerializeField] private Unit[] _units;
 		private readonly Dictionary<UnitId, Unit> _database = new();
 
@@ -34,8 +35,8 @@ namespace Databases {
 	}
 
 	[Serializable]
-	public sealed class UnitRare {
-		public EUnitGrade _grade;
+	public sealed class UnitGrade {
+		public EUnitGrade Grade;
 		public float Damage;
 		public float Health;
 		public float MoveSpeed;
@@ -53,11 +54,11 @@ namespace Databases {
 		public int Level;
 		public int Quantity;
 
-		public EUnitGrade _grade;
+		public EUnitGrade Grade;
 		public float Damage;
 		public float Health;
 		public float MoveSpeed;
 
-		public List<UnitRare> UnitRares = new();
+		public List<UnitGrade> UnitRares = new();
 	}
 }

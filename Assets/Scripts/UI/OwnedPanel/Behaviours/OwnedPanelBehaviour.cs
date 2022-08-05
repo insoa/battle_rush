@@ -11,7 +11,7 @@ namespace UI.OwnedPanel.Behaviours {
 
 		public void CreateCell(Unit unit) {
 			var cell = Instantiate(_cellPrefab, _contentParent);
-			cell.SetRare(unit._grade);
+			cell.SetRare(unit.Grade);
 			cell.SetCharacterIcon(unit.UnitIcon);
 			cell.SetCharacterName(unit.Name);
 			cell.SetCharacterLevel(unit.Level.ToString());
