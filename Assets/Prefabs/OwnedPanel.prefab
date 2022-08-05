@@ -2880,7 +2880,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6784544100251787104}
   - component: {fileID: 4968737706009033993}
-  - component: {fileID: 4668447539437169059}
+  - component: {fileID: 483768074199230587}
   m_Layer: 5
   m_Name: OwnedPanel
   m_TagString: Untagged
@@ -2928,7 +2928,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _cellPrefab: {fileID: 121091355262631250, guid: 29a261f3be2b62f4b82bdff388685701, type: 3}
   _contentParent: {fileID: 6784544100469206877}
---- !u!114 &4668447539437169059
+--- !u!114 &483768074199230587
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2937,11 +2937,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 6784544100251787105}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 479f3a1cf8d4402d81e9dcd801026e1d, type: 3}
+  m_Script: {fileID: 11500000, guid: 046cb80812b246028fa890326d73c4e0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  OwnedPanelBehaviour: {fileID: 4968737706009033993}
-  OwnedCellBehaviour: {fileID: 121091355262631250, guid: 29a261f3be2b62f4b82bdff388685701, type: 3}
 --- !u!1 &6784544100469206874
 GameObject:
   m_ObjectHideFlags: 0

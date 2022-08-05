@@ -1,5 +1,7 @@
 // Animancer // https://kybernetik.com.au/animancer // Copyright 2020 Kybernetik //
 
+using UnityEngine.PlayerLoop;
+
 namespace Animancer.FSM
 {
     public partial class StateMachine<TKey, TState>
@@ -39,7 +41,7 @@ namespace Animancer.FSM
             /// <summary>
             /// Attempts to enter the specified state and returns true if successful.
             /// Otherwise the state is remembered and attempted again every time
-            /// <see cref="StateMachine{TState}.InputBuffer.Update"/> is called.
+            /// <see cref="Update"/> is called.
             /// </summary>
             public bool TrySetState(TKey key, TState state, float timeOut)
             {
@@ -50,7 +52,7 @@ namespace Animancer.FSM
             /// <summary>
             /// Attempts to enter the specified state and returns true if successful.
             /// Otherwise the state is remembered and attempted again every time
-            /// <see cref="StateMachine{TState}.InputBuffer.Update"/> is called.
+            /// <see cref="Update"/> is called.
             /// </summary>
             public bool TrySetState(TKey key, float timeOut)
                 => StateMachine.TryGetValue(key, out var state) && TrySetState(key, state, timeOut);

@@ -1,6 +1,7 @@
 // Animancer // https://kybernetik.com.au/animancer // Copyright 2020 Kybernetik //
 
 using UnityEngine;
+using UnityEngine.PlayerLoop;
 
 namespace Animancer.FSM
 {
@@ -8,7 +9,7 @@ namespace Animancer.FSM
     {
         /// <summary>
         /// A simple buffer that remembers any failed calls to <see cref="StateMachine{TState}.TrySetState(TState)"/>
-        /// so that it can retry them each time you <see cref="Update"/> it until the <see cref="TimeOut"/> expires.
+        /// so that it can retry them each time you <see cref="UnityEngine.PlayerLoop.Update"/> it until the <see cref="TimeOut"/> expires.
         /// </summary>
         /// <remarks>
         /// Documentation: <see href="https://kybernetik.com.au/animancer/docs/manual/fsm#input-buffers">Input Buffers</see>
@@ -48,7 +49,7 @@ namespace Animancer.FSM
 
             /// <summary>
             /// Attempts to enter the specified state and returns true if successful.
-            /// Otherwise the state is remembered and attempted again every time <see cref="Update"/> is called.
+            /// Otherwise the state is remembered and attempted again every time <see cref="UnityEngine.PlayerLoop.Update"/> is called.
             /// </summary>
             public bool TrySetState(TState state, float timeOut)
             {
@@ -116,7 +117,7 @@ namespace Animancer.FSM
             /// <summary>
             /// Attempts to enter the <see cref="BufferedState"/> if there is one and returns true if successful.
             /// <para></para>
-            /// Unlike <see cref="Update"/>, this method doesn't update the <see cref="TimeOut"/>.
+            /// Unlike <see cref="UnityEngine.PlayerLoop.Update"/>, this method doesn't update the <see cref="TimeOut"/>.
             /// </summary>
             public bool CheckBuffer()
             {

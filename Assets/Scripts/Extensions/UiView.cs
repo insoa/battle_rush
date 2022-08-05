@@ -1,9 +1,7 @@
-﻿using UiSystem.Interfaces;
-using UnityEngine;
+﻿using UnityEngine;
 
-namespace UiSystem {
-	
-	public abstract class UiView : MonoBehaviour, IUiView {
+namespace Extensions {
+	public class UiView : MonoBehaviour, IUiView {
 		
 		void IUiView.Show() {
 			transform.SetAsLastSibling();
@@ -13,16 +11,17 @@ namespace UiSystem {
 
 		protected virtual void OnShow() { }
 
+		protected virtual void OnHide() { }
+		
 		void IUiView.Hide() {
 			gameObject.SetActive(false);
 			OnHide();
 		}
 
-		protected virtual void OnHide() { }
-
 		void IUiView.SetParent(Transform parent) {
 			transform.SetParent(parent, false);
 		}
+
 		void IUiView.SetOrder(int index) {
 			var parent = transform.parent;
 			if (parent == null)

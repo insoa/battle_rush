@@ -1,9 +1,8 @@
-﻿using UI.OwnedPanel.Behaviours;
-using UiSystem;
+﻿using Extensions;
+using UnityEngine;
 
 namespace UI.OwnedPanel.Views {
-	public sealed class OwnedPanelView : UiView {
-		public OwnedPanelBehaviour OwnedPanelBehaviour;
-		public OwnedCellBehaviour OwnedCellBehaviour;
+	public sealed class OwnedPanelView : UiView{
+		
 	}
 }

@@ -7,7 +7,7 @@ using UnityEngine;
 
 namespace Animancer
 {
-    /// <summary>An object with a <see cref="Animancer.Key"/> so it can be used in a <see cref="Key.KeyedList{T}"/>.</summary>
+    /// <summary>An object with a <see cref="Animancer.Key"/> so it can be used in a <see cref="Animancer.Key.KeyedList{T}"/>.</summary>
     /// <example>
     /// It is usually easiest to just inherit from <see cref="Animancer.Key"/>, but if that is not possible then the
     /// recommended implementation looks like this:
