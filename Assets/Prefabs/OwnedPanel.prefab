@@ -2940,6 +2940,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 046cb80812b246028fa890326d73c4e0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  OwnedPanelBehaviour: {fileID: 4968737706009033993}
+  OwnedCellBehaviour: {fileID: 121091355262631250, guid: 29a261f3be2b62f4b82bdff388685701, type: 3}
 --- !u!1 &6784544100469206874
 GameObject:
   m_ObjectHideFlags: 0

@@ -11,7 +11,8 @@ namespace Installers {
 		[SerializeField] private OwnedPanelView _ownedPanelView;
 
 		public override void InstallBindings() {
-			Container.BindUiView<OwnedPanel, OwnedPanelView>(_ownedPanelView);
+			//Container.InstantiatePrefab(_ownedPanelView, _canvas);
+			Container.BindUiView<OwnedPanel, OwnedPanelView>(_ownedPanelView, _canvas);
 		}
 	}
 }
