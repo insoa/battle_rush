@@ -13,17 +13,17 @@ MonoBehaviour:
   m_Name: ColorsDatabase
   m_EditorClassIdentifier: 
   RareColors:
-  - Rare: 0
+  - _grade: 0
     Color: {r: 0.6226415, g: 0.6226415, b: 0.6226415, a: 1}
-  - Rare: 1
+  - _grade: 1
     Color: {r: 0.9339623, g: 0.9339623, b: 0.9339623, a: 1}
-  - Rare: 2
+  - _grade: 2
     Color: {r: 0.21226418, g: 0.62437564, b: 1, a: 1}
-  - Rare: 3
+  - _grade: 3
     Color: {r: 1, g: 0.18396229, b: 0.8925099, a: 1}
-  - Rare: 4
+  - _grade: 4
     Color: {r: 1, g: 0.8074833, b: 0.18396229, a: 1}
-  - Rare: 5
+  - _grade: 5
     Color: {r: 0.3066038, g: 1, b: 0.6481962, a: 1}
-  - Rare: 6
+  - _grade: 6
     Color: {r: 1, g: 0.3066038, b: 0.3066038, a: 1}

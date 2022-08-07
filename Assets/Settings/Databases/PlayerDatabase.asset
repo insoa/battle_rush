@@ -22,100 +22,170 @@ MonoBehaviour:
       _value: Spook
     Type: 0
     Class: 0
-    Prefab: {fileID: 0}
-    UnitIcon: {fileID: 0}
-    ClassIcon: {fileID: 0}
+    Prefab: {fileID: 2143963233178108554, guid: 646cf81af973f0647b302702d8983dd5, type: 3}
+    UnitIcon: {fileID: 21300000, guid: b5f14193bae892b4e93e78315e1a4314, type: 3}
+    ClassIcon: {fileID: 21300000, guid: 2055fd42ce4d8486295b232b0f3db096, type: 3}
     Level: 0
     Quantity: 0
-    Grade: 0
-    Damage: 0
-    Health: 0
-    MoveSpeed: 0
-    UnitRares: []
-  - Id:
-      _value: Spook
-    Type: 0
-    Class: 0
-    Prefab: {fileID: 0}
-    UnitIcon: {fileID: 0}
-    ClassIcon: {fileID: 0}
-    Level: 0
-    Quantity: 0
-    Grade: 0
-    Damage: 0
-    Health: 0
-    MoveSpeed: 0
-    UnitRares: []
-  - Id:
-      _value: Spook
-    Type: 0
-    Class: 0
-    Prefab: {fileID: 0}
-    UnitIcon: {fileID: 0}
-    ClassIcon: {fileID: 0}
-    Level: 0
-    Quantity: 0
-    Grade: 0
-    Damage: 0
-    Health: 0
-    MoveSpeed: 0
-    UnitRares: []
-  - Id:
-      _value: Spook
-    Type: 0
-    Class: 0
-    Prefab: {fileID: 0}
-    UnitIcon: {fileID: 0}
-    ClassIcon: {fileID: 0}
-    Level: 0
-    Quantity: 0
-    Grade: 0
-    Damage: 0
-    Health: 0
-    MoveSpeed: 0
-    UnitRares: []
+    Grade: 3
+    Damage: 4
+    Health: 4
+    MoveSpeed: 4
+    unitGrades:
+    - Grade: 0
+      Damage: 1
+      Health: 1
+      MoveSpeed: 1
+    - Grade: 1
+      Damage: 2
+      Health: 2
+      MoveSpeed: 2
+    - Grade: 2
+      Damage: 3
+      Health: 3
+      MoveSpeed: 3
+    - Grade: 3
+      Damage: 4
+      Health: 4
+      MoveSpeed: 4
+    - Grade: 4
+      Damage: 5
+      Health: 5
+      MoveSpeed: 5
+    - Grade: 5
+      Damage: 6
+      Health: 6
+      MoveSpeed: 6
+    - Grade: 6
+      Damage: 7
+      Health: 7
+      MoveSpeed: 7
   - Id:
       _value: Bee
     Type: 1
     Class: 0
-    Prefab: {fileID: 0}
-    UnitIcon: {fileID: 0}
-    ClassIcon: {fileID: 0}
+    Prefab: {fileID: 3198499350609119052, guid: 9992beb367802434fbe4638bb61476bb, type: 3}
+    UnitIcon: {fileID: 21300000, guid: 9dc9867246fc8ed4aba1ddc42e7974e8, type: 3}
+    ClassIcon: {fileID: 21300000, guid: 92885073c980349c2a786888bd70f710, type: 3}
     Level: 0
     Quantity: 0
-    Grade: 0
-    Damage: 0
-    Health: 0
-    MoveSpeed: 0
-    UnitRares: []
+    Grade: 2
+    Damage: 2
+    Health: 2
+    MoveSpeed: 2
+    unitGrades:
+    - Grade: 1
+      Damage: 1
+      Health: 1
+      MoveSpeed: 1
+    - Grade: 2
+      Damage: 2
+      Health: 2
+      MoveSpeed: 2
+    - Grade: 3
+      Damage: 3
+      Health: 3
+      MoveSpeed: 3
+    - Grade: 4
+      Damage: 4
+      Health: 4
+      MoveSpeed: 4
+    - Grade: 5
+      Damage: 5
+      Health: 5
+      MoveSpeed: 5
+    - Grade: 6
+      Damage: 6
+      Health: 6
+      MoveSpeed: 6
+    - Grade: 7
+      Damage: 7
+      Health: 7
+      MoveSpeed: 8
   - Id:
-      _value: Bee
-    Type: 1
+      _value: Spook
+    Type: 0
     Class: 0
-    Prefab: {fileID: 0}
-    UnitIcon: {fileID: 0}
-    ClassIcon: {fileID: 0}
+    Prefab: {fileID: 2143963233178108554, guid: 646cf81af973f0647b302702d8983dd5, type: 3}
+    UnitIcon: {fileID: 21300000, guid: b5f14193bae892b4e93e78315e1a4314, type: 3}
+    ClassIcon: {fileID: 21300000, guid: 2055fd42ce4d8486295b232b0f3db096, type: 3}
     Level: 0
     Quantity: 0
-    Grade: 0
-    Damage: 0
-    Health: 0
-    MoveSpeed: 0
-    UnitRares: []
+    Grade: 3
+    Damage: 4
+    Health: 4
+    MoveSpeed: 4
+    unitGrades:
+    - Grade: 0
+      Damage: 1
+      Health: 1
+      MoveSpeed: 1
+    - Grade: 1
+      Damage: 2
+      Health: 2
+      MoveSpeed: 2
+    - Grade: 2
+      Damage: 3
+      Health: 3
+      MoveSpeed: 3
+    - Grade: 3
+      Damage: 4
+      Health: 4
+      MoveSpeed: 4
+    - Grade: 4
+      Damage: 5
+      Health: 5
+      MoveSpeed: 5
+    - Grade: 5
+      Damage: 6
+      Health: 6
+      MoveSpeed: 6
+    - Grade: 6
+      Damage: 7
+      Health: 7
+      MoveSpeed: 7
   - Id:
-      _value: Bee
-    Type: 1
+      _value: Spook
+    Type: 0
     Class: 0
-    Prefab: {fileID: 0}
-    UnitIcon: {fileID: 0}
-    ClassIcon: {fileID: 0}
+    Prefab: {fileID: 2143963233178108554, guid: 646cf81af973f0647b302702d8983dd5, type: 3}
+    UnitIcon: {fileID: 21300000, guid: b5f14193bae892b4e93e78315e1a4314, type: 3}
+    ClassIcon: {fileID: 21300000, guid: 2055fd42ce4d8486295b232b0f3db096, type: 3}
     Level: 0
     Quantity: 0
-    Grade: 0
-    Damage: 0
-    Health: 0
-    MoveSpeed: 0
-    UnitRares: []
+    Grade: 2
+    Damage: 3
+    Health: 3
+    MoveSpeed: 3
+    unitGrades:
+    - Grade: 0
+      Damage: 1
+      Health: 1
+      MoveSpeed: 1
+    - Grade: 1
+      Damage: 2
+      Health: 2
+      MoveSpeed: 2
+    - Grade: 2
+      Damage: 3
+      Health: 3
+      MoveSpeed: 3
+    - Grade: 3
+      Damage: 4
+      Health: 4
+      MoveSpeed: 4
+    - Grade: 4
+      Damage: 5
+      Health: 5
+      MoveSpeed: 5
+    - Grade: 5
+      Damage: 6
+      Health: 6
+      MoveSpeed: 6
+    - Grade: 6
+      Damage: 7
+      Health: 7
+      MoveSpeed: 7
   _unitDatabase: {fileID: 11400000, guid: e2fd2d8bae96d8a4994854e4d98ef30f, type: 2}
-  _unitType: 1
-  _unitGrade: 3
+  _unitType: 0
+  _unitGrade: 2
