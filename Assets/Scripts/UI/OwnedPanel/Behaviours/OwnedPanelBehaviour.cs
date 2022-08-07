@@ -13,7 +13,7 @@ namespace UI.OwnedPanel.Behaviours {
 			var cell = Instantiate(_cellPrefab, _contentParent);
 			cell.SetRare(unit.Grade);
 			cell.SetCharacterIcon(unit.UnitIcon);
-			cell.SetCharacterName(unit.Name);
+			//cell.SetCharacterName(unit.Name);
 			cell.SetCharacterLevel(unit.Level.ToString());
 			cell.SetCharacterClass(unit.Class.ToString(), unit.ClassIcon);
 		}

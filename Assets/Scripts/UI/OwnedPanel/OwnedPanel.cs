@@ -14,7 +14,6 @@ namespace UI.OwnedPanel {
 		}
 
 		public void Initialize() {
-			Debug.Log("OwnedPanelCOntroller");
 			foreach (var unit in _playerDatabase.Units) {
 				View.OwnedPanelBehaviour.CreateCell(unit);
 			}

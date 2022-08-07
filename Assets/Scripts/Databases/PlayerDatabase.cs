@@ -1,6 +1,9 @@
 ﻿using System.Collections.Generic;
+using Databases.Id;
 using Enums;
+using Interfaces;
 using UnityEngine;
+using Zenject;
 
 namespace Databases {
 	[CreateAssetMenu(fileName = "PlayerDatabase", menuName = "ScriptableObjects/PlayerDatabase", order = 5)]
@@ -13,9 +16,25 @@ namespace Databases {
 		public List<ResourceItem> Resources = new();
 		public List<Unit> Units = new();
 
-		public void AddUnit(Unit unit, EUnitGrade grade) {
+		// public enum ComponentType {None = 1, };
+		// public ComponentType component;
+
+		[SerializeField] private UnitDatabase _unitDatabase;
+		[SerializeField] private EUnitType _unitType;
+		[SerializeField] private EUnitGrade _unitGrade;
+
+		public void AddUnitFromEditor() {
+			foreach (var unit in _unitDatabase.Units) {
+				if (unit.Type != _unitType)
+					continue;
+				AddUnit(unit.Id, _unitGrade);
+			}
+		}
+
+		private void AddUnit(UnitId unitId, EUnitGrade grade) {
+			var unit = _unitDatabase.Get(unitId);
 			Units.Add(unit);
-			foreach (var rareType in unit.UnitRares) {
+			foreach (var rareType in unit.unitGrades) {
 				if (grade != rareType.Grade)
 					continue;
 				unit.Grade = grade;
@@ -28,6 +47,15 @@ namespace Databases {
 		public void AddResource(ResourceItem resource, int quantity) {
 			for (var i = 0; i < quantity; i++)
 				Resources.Add(resource);
+		}
+
+
+		public void ClearUnits() {
+			Units.Clear();
+		}
+		
+		public void ClearResources() {
+			Resources.Clear();
 		}
 	}
 }

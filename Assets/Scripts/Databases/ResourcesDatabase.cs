@@ -9,6 +9,7 @@ namespace Databases {
 	
 		[SerializeField] private ResourceItem[] _resources;
 		private readonly Dictionary<ResourceId, ResourceItem> _database = new();
+		
 		public IEnumerable<ResourceItem> All => _resources;
 
 		public ResourcesDatabase(ResourceData data) {

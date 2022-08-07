@@ -12,47 +12,46 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1cae5449d8a4b6c991f7448ebddaa6f, type: 3}
   m_Name: UnitsDatabase
   m_EditorClassIdentifier: 
-  _units:
+  Units:
   - Id:
-      _value: 
-    Name: Spok
+      _value: Spook
     Type: 0
     Class: 0
-    Prefab: {fileID: 2143963233178108554, guid: 646cf81af973f0647b302702d8983dd5, type: 3}
-    UnitIcon: {fileID: 21300000, guid: b5f14193bae892b4e93e78315e1a4314, type: 3}
-    ClassIcon: {fileID: 21300000, guid: 92885073c980349c2a786888bd70f710, type: 3}
+    Prefab: {fileID: 0}
+    UnitIcon: {fileID: 0}
+    ClassIcon: {fileID: 0}
     Level: 0
-    Quantity: 15
-    _grade: 0
+    Quantity: 0
+    Grade: 0
     Damage: 0
     Health: 0
     MoveSpeed: 0
-    UnitRares:
-    - _grade: 0
-      Damage: 10
-      Health: 10
-      MoveSpeed: 5
-    - _grade: 1
-      Damage: 15
-      Health: 12
-      MoveSpeed: 5
-    - _grade: 2
-      Damage: 19
-      Health: 13
-      MoveSpeed: 6
-    - _grade: 3
-      Damage: 25
-      Health: 20
-      MoveSpeed: 7
-    - _grade: 4
-      Damage: 35
-      Health: 25
-      MoveSpeed: 7
-    - _grade: 5
-      Damage: 40
-      Health: 30
-      MoveSpeed: 7
-    - _grade: 6
-      Damage: 50
-      Health: 35
-      MoveSpeed: 8
+    UnitRares: []
+  - Id:
+      _value: Bee
+    Type: 1
+    Class: 0
+    Prefab: {fileID: 0}
+    UnitIcon: {fileID: 0}
+    ClassIcon: {fileID: 0}
+    Level: 0
+    Quantity: 0
+    Grade: 0
+    Damage: 0
+    Health: 0
+    MoveSpeed: 0
+    UnitRares: []
+  - Id:
+      _value: Sprout
+    Type: 2
+    Class: 0
+    Prefab: {fileID: 0}
+    UnitIcon: {fileID: 0}
+    ClassIcon: {fileID: 0}
+    Level: 0
+    Quantity: 0
+    Grade: 0
+    Damage: 0
+    Health: 0
+    MoveSpeed: 0
+    UnitRares: []
