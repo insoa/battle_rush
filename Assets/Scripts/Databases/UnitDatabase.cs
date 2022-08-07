@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using Databases.Id;
 using Enums;
 using Interfaces;
+using Other;
 using UnityEngine;
 using Zenject;
 
@@ -17,11 +18,11 @@ namespace Databases {
 			foreach (var unit in Units) {
 				_database.Add(unit.Id, unit);
 				Debug.Log("UnitAdded" + "-" + unit.Id);
+				Debug.Log("ElementsCount" + "-" + _database.Count);
 			}
 		}
 		
-		public Unit Get(UnitId unitId) { 
-			Debug.Log(_database.Count);
+		public Unit Get(UnitId unitId) {
 			if (!_database.ContainsKey(unitId))
 				Debug.Log("[ItemsDatabase]" + $"Can't find item with id {unitId}");
 			return _database[unitId];
@@ -29,6 +30,11 @@ namespace Databases {
 
 		public bool Has(UnitId unitId) {
 			return _database.ContainsKey(unitId);
+		}
+
+		public void Clear() {
+			_database.Clear();
+			Debug.Log(_database.Count);
 		}
 	}
 

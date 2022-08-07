@@ -10,8 +10,12 @@ namespace Editor {
 
 			var function = (UnitDatabase)target;
 			
-			if (GUILayout.Button("Initialize Database")) {
+			if (GUILayout.Button("Initialize Dictionary")) {
 				function.Initialize();
+			}
+			
+			if (GUILayout.Button("Clear Dictionary")) {
+				function.Clear();
 			}
 		}
 	}

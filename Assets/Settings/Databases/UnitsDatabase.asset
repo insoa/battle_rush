@@ -26,32 +26,4 @@ MonoBehaviour:
     Damage: 0
     Health: 0
     MoveSpeed: 0
-    UnitRares: []
-  - Id:
-      _value: Bee
-    Type: 1
-    Class: 0
-    Prefab: {fileID: 0}
-    UnitIcon: {fileID: 0}
-    ClassIcon: {fileID: 0}
-    Level: 0
-    Quantity: 0
-    Grade: 0
-    Damage: 0
-    Health: 0
-    MoveSpeed: 0
-    UnitRares: []
-  - Id:
-      _value: Sprout
-    Type: 2
-    Class: 0
-    Prefab: {fileID: 0}
-    UnitIcon: {fileID: 0}
-    ClassIcon: {fileID: 0}
-    Level: 0
-    Quantity: 0
-    Grade: 0
-    Damage: 0
-    Health: 0
-    MoveSpeed: 0
-    UnitRares: []
+    unitGrades: []

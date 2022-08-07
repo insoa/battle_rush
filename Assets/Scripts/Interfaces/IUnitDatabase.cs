@@ -5,5 +5,7 @@ namespace Interfaces {
 	public interface IUnitDatabase { 
 		Unit Get(UnitId unitId);
 		bool Has(UnitId unitId);
+
+		void Clear();
 	}
 }
