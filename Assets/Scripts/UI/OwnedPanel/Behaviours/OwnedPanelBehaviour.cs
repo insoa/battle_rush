@@ -1,7 +1,6 @@
 ﻿using Databases;
 using UI.InventoryPanel.Interfaces;
 using UnityEngine;
-using Zenject;
 
 namespace UI.OwnedPanel.Behaviours {
 	public sealed class OwnedPanelBehaviour : MonoBehaviour, ICollectionPanel {
@@ -9,13 +8,14 @@ namespace UI.OwnedPanel.Behaviours {
 		[SerializeField] private OwnedCellBehaviour _cellPrefab;
 		[SerializeField] private Transform _contentParent;
 
-		public void CreateCell(Unit unit) {
+		public OwnedCellBehaviour CreateCell(Unit unit) {
 			var cell = Instantiate(_cellPrefab, _contentParent);
 			cell.SetRare(unit.Grade);
 			cell.SetCharacterIcon(unit.UnitIcon);
-			//cell.SetCharacterName(unit.Name);
+			cell.SetCharacterName(unit.Id.Value);
 			cell.SetCharacterLevel(unit.Level.ToString());
 			cell.SetCharacterClass(unit.Class.ToString(), unit.ClassIcon);
+			return cell;
 		}
 	}
 }

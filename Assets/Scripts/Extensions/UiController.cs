@@ -1,4 +1,5 @@
-﻿using Zenject;
+﻿using Extensions.Interfaces;
+using Zenject;
 
 namespace Extensions {
 	

@@ -415,6 +415,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f3af4ddfbfd147fa891a382eba195a57, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Button: {fileID: 8420209079404503717}
   _colorsDatabase: {fileID: 11400000, guid: 204e4bf437591724c8e7954ab2f912f3, type: 2}
   _characterImage: {fileID: 9177098193476332072}
   _classImage: {fileID: 5993559555092835466}

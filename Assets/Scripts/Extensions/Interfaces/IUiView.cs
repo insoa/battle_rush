@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace Extensions {
+namespace Extensions.Interfaces {
 	public interface IUiView {
 		void Destroy();
 		void SetOrder(int index);

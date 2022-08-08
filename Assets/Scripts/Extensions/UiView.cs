@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using Extensions.Interfaces;
+using UnityEngine;
 
 namespace Extensions {
 	public class UiView : MonoBehaviour, IUiView {

@@ -1,9 +1,10 @@
 ﻿using Databases;
 using Enums;
+using UI.OwnedPanel.Behaviours;
 using UnityEngine;
 
 namespace UI.InventoryPanel.Interfaces {
 	public interface ICollectionPanel {
-		void CreateCell(Unit unit);
+		OwnedCellBehaviour CreateCell(Unit unit);
 	}
 }

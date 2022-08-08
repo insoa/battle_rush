@@ -8,8 +8,8 @@ using UnityEngine.UI;
 namespace UI.OwnedPanel.Behaviours {
 	public sealed class OwnedCellBehaviour : MonoBehaviour {
 
+		public Button Button;
 		[SerializeField] private ColorsDatabase _colorsDatabase;
-		
 		[SerializeField] private Image _characterImage;
 		[SerializeField] private Image _classImage;
 		[SerializeField] private Image _rareBackground;
